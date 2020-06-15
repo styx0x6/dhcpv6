@@ -2,6 +2,11 @@
 
 A [**dnsmasq**](http://www.thekelleys.org.uk/dnsmasq/doc.html) docker image pre-configured for a lightweight DHCPv6 service usage. Using [**webproc**](https://github.com/jpillora/webproc/) as light WebUI.
 
+[![Docker Image Version](https://img.shields.io/docker/v/styx0x6/dhcpv6?sort=semver&logo=docker)](https://hub.docker.com/repository/docker/styx0x6/dhcpv6)
+[![Docker Image Size](https://img.shields.io/docker/image-size/styx0x6/dhcpv6?sort=semver&logo=docker)](https://hub.docker.com/repository/docker/styx0x6/dhcpv6)
+[![Build Status](https://img.shields.io/travis/styx0x6/dhcpv6/master.svg?logo=travis&label=master)](https://travis-ci.org/styx0x6/dhcpv6)
+[![License](https://img.shields.io/github/license/styx0x6/dhcpv6?color=blue)](https://raw.githubusercontent.com/styx0x6/dhcpv6/master/LICENSE)
+
 ## About
 
 It started with a statement, a lack of features with internet home magic boxes. A lot of providers are offering IPv6. A good thing. But it's only designed to work for websurfing, with a classical SLAAC autoconfiguration into subnet announced by RA, sometimes with the possibility to customize RDNSS options with your own-selected DNS instead of ISP provided ones. Also, and unfortunately eachtime, there is no way to set static IPv6 definitions in a centralized way (aka DHCPv6).
@@ -106,6 +111,7 @@ Feel free to submit *issues* and enhancement via *pull requests*!
 ## Third-Party Tools
 
 This docker image is based on Jaime Pillora's work:
+
 [https://github.com/jpillora/docker-dnsmasq](https://github.com/jpillora/docker-dnsmasq)
 [https://hub.docker.com/r/jpillora/dnsmasq](https://hub.docker.com/r/jpillora/dnsmasq)
 
@@ -113,33 +119,31 @@ This Docker image includes bundled packages and below are their associated licen
 
 * **Alpine Linux**
 
-    Copyright (C) 2020, Alpine Linux Development Team
-    All rights reserved
+    Copyright (C) 2020, Alpine Linux Development Team. All rights reserved.
+
     [https://alpinelinux.org/](https://alpinelinux.org/)
     [https://hub.docker.com/_/alpine/](https://hub.docker.com/_/alpine/)
 
-* **dnsmasq**
+* **dnsmasq** [![GPL-3.0 license](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](http://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=COPYING-v3;hb=HEAD)
 
-    Copyright (C) 2020, thekelleys.org.uk, Simon Kelley & Contributors
-    [![GPL-3.0 license](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](http://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=blob_plain;f=COPYING-v3;hb=HEAD)
+    Copyright (C) 2020, thekelleys.org.uk, Simon Kelley & Contributors.
+
     [http://www.thekelleys.org.uk/dnsmasq/doc.html](http://www.thekelleys.org.uk/dnsmasq/doc.html)
 
-* **webproc**
+* **webproc** [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-    Copyright (C) 2017, Jaime Pillora <dev@jpillora.com>
-    [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+    Copyright (C) 2017, Jaime Pillora <dev@jpillora.com>.
+
     [https://github.com/jpillora/webproc](https://github.com/jpillora/webproc)
 
 Other used stuff:
 
-* **Shields.io** - Badges as a service.
+* **Shields.io** - Badges as a service [![CC0-1.0 license](http://i.creativecommons.org/p/zero/1.0/88x15.png)](https://raw.githubusercontent.com/badges/shields/master/LICENSE)
 
-    [![CC0-1.0 license](http://i.creativecommons.org/p/zero/1.0/88x15.png)](https://raw.githubusercontent.com/badges/shields/master/LICENSE)
     [http://shields.io/](http://shields.io/)  
     [https://github.com/badges/shields/](https://github.com/badges/shields/)
 
-* **Simple Icons** - Icons as a service.
+* **Simple Icons** - Icons as a service [![CC0-1.0 license](http://i.creativecommons.org/p/zero/1.0/88x15.png)](https://raw.githubusercontent.com/simple-icons/simple-icons/master/LICENSE.md)
 
-    [![CC0-1.0 license](http://i.creativecommons.org/p/zero/1.0/88x15.png)](https://raw.githubusercontent.com/simple-icons/simple-icons/master/LICENSE.md)
     [https://simpleicons.org/](https://simpleicons.org/)  
     [https://github.com/simple-icons/simple-icons/](https://github.com/simple-icons/simple-icons/)
