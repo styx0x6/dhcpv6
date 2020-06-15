@@ -1,5 +1,7 @@
-sudo: true
-dist: bionic
+os:
+- linux
+- windows
+language: minimal
 
 jobs:
   include:
