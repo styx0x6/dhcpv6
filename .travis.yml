@@ -1,0 +1,11 @@
+sudo: true
+dist: bionic
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - docker build -t dhcpv6 .
+      - docker images
+    - stage: test docker image
+      script: docker run --name dhcpv6 -d --restart always --cap-add=NET_ADMIN -p 6789:6789/tcp -p 547:547/udp dhcpv6
