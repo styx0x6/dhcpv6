@@ -1,0 +1,21 @@
+## Post-install configuration for dnsmasq
+## Based on Debian version of /etc/default/dnsmasq
+
+## This file has several functions:
+## * to completely enable/disable starting dnsmasq,
+## * to stop the resolvconf package from controlling dnsmasq's
+##    idea of which upstream nameservers to use.
+## For upgraders from very old versions, all the shell variables set
+## here in previous versions are still honored by the init script
+## so if you just keep your old version of this file nothing will break.
+
+# Whether or not to run the dnsmasq daemon; set to 0 to disable.
+ENABLED=1
+
+# If the resolvconf package is installed, dnsmasq will use its output
+# rather than the contents of /etc/resolv.conf to find upstream
+# nameservers. Uncommenting this line inhibits this behaviour.
+# Note that including a "resolv-file=<filename>" line in
+# /etc/dnsmasq.conf is not enough to override resolvconf if it is
+# installed: the line below must be uncommented.
+IGNORE_RESOLVCONF=yes
